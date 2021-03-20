@@ -3,7 +3,7 @@
 
 This repository contains the Python (PyTorch) code for the paper **10 Mega Pixel Snapshot Compressive Imaging with A Hybrid Coded Aperture**
 
-The initial Python code for [PnP-SCI](https://github.com/liuyang12/PnP-SCI) was from [Yang Liu](https://liuyang12.github.io "Yang Liu, MIT") and [Dr. Xin Yuan](https://www.bell-labs.com/usr/x.yuan "Dr. Xin Yuan, Bell Labs").
+The initial Python code for [PnP-SCI](https://github.com/liuyang12/PnP-SCI) was from [Yang Liu](https://liuyang12.github.io "Yang Liu, MIT") and [Dr. Xin Yuan](https://sites.google.com/site/eiexyuan/ "Dr. Xin Yuan, Bell Labs").
 
 
 ## How to run this code
