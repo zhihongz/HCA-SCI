@@ -123,6 +123,10 @@ def admm_multistep_denoise(y, Phi_sum, A, At, _lambda=1, gamma=0.0,
     '''
     ADMM-based multistep denoise
 
+    Note
+    ----------
+    'ADMM_MULTISTEP_DENOISE' performs badly on simulated datasets. [zzh]
+    
     Parameters
     ----------
     y : two-dimensional (2D) ndarray of ints, uints or floats
@@ -238,8 +242,8 @@ def admm_multistep_denoise(y, Phi_sum, A, At, _lambda=1, gamma=0.0,
                 #     print("Exception: ",repr(e))
                   
                 # [.2] denoise_step2: ffdnet_denoising
-                # theta = ffdnet_vdenoiser(theta, nsig, model)
-                theta = ffdnet_vdenoiser(x-b, nsig, model)     
+                theta = ffdnet_vdenoiser(theta, nsig, model)
+                # theta = ffdnet_vdenoiser(x-b, nsig, model)     
                             
             elif denoiser.lower() == 'tv+fastdvdnet':
                 if nsig== 1 and it==1:
