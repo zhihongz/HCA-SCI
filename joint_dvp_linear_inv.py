@@ -122,10 +122,6 @@ def admm_multistep_denoise(y, Phi_sum, A, At, _lambda=1, gamma=0.0,
                 tv_weight=0.1, tv_iter_max=5, multichannel=True, x0=None, model=None, X_orig=None, show_iqa=True, tvm='tv_chambolle'):
     '''
     ADMM-based multistep denoise
-
-    Note
-    ----------
-    'ADMM_MULTISTEP_DENOISE' performs badly on simulated datasets. [zzh]
     
     Parameters
     ----------
