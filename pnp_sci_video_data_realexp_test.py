@@ -185,8 +185,8 @@ if ('all' in test_algo_flag) or ('gaptv+fastdvdnet' in test_algo_flag):
     accelerate = True  # enable accelerated version of GAP
     denoiser = 'tv+fastdvdnet'  # video non-local network
     noise_estimate = False  # disable noise estimation for GAP
-    sigma1 = []  # pre-set noise standard deviation for 1st period denoise
-    iter_max1 = 50  # maximum number of iterations for 1st period denoise
+    sigma1 = [0]  # pre-set noise standard deviation for 1st period denoise
+    iter_max1 = 10  # maximum number of iterations for 1st period denoise
     # pre-set noise standard deviation for 2nd period denoise
     sigma2 = [150/MAXB, 80/MAXB, 50/MAXB, 30/MAXB]
     # maximum number of iterations for 2nd period denoise
