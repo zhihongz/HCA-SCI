@@ -9,7 +9,7 @@ The initial Python code for [PnP-SCI](https://github.com/liuyang12/PnP-SCI) was 
 ## How to run this code
 This code is tested on Windows 10 CUDA 10.0.130, CuDNN 7.6.0, and PyTorch 1.2.0. It is supposed to work on other platforms (Linux or Windows) with CUDA-enabled GPU(s). 
 
-1. Download the dataset from [Baidu Drive](https://pan.baidu.com/s/1ksKkeRiLoUv6H8vj40BtBw) (access code `1111`), and put the dataset in `./dataset`.
+1. Put the dataset into `./dataset`.
 2. Create the virtual environment with required Python packages via  
 `conda env create -f environment.yml`
 2. Run  `pnp_sci_video_data_simuexp_test.py` to test the simulated data.
