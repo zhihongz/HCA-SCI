@@ -41,7 +41,6 @@ datasetdir = './dataset/real_data' # data dir
 resultsdir = './results' # results dir  # results
 datname = 'data_E_478_20210315_roi400-1440_sz320_Cr6'
 
-
 matfile = datasetdir + '/' + datname + '.mat'  # path of the .mat data file
 
 
@@ -51,15 +50,21 @@ matfile = datasetdir + '/' + datname + '.mat'  # path of the .mat data file
 if get_matfile_version(_open_file(matfile, appendmat=True)[0])[0] < 2:
     # for '-v7.2' and lower version of .mat file (MATLAB)
     file = sio.loadmat(matfile)
-    order = 'K'  # [order] keep as the default order in Python/numpy
-    meas = np.float32(file['meas'], order=order)
-    mask = np.float32(file['mask'], order=order)
+    # [order] keep as the default order in Python/numpy, 
+    # the param is deprecate in some version of numpy
+    # order = 'K'  
+    # meas = np.float32(file['meas'], order=order)
+    # mask = np.float32(file['mask'], order=order)
+    meas = np.float32(file['meas'])
+    mask = np.float32(file['mask'])
     # orig = np.float32(file['orig'], order=order)
 else:  # MATLAB .mat v7.3
     file = h5py.File(matfile, 'r')  # for '-v7.3' .mat file (MATLAB)
-    order = 'F'  # [order] switch to MATLAB array order
-    meas = np.float32(file['meas'], order=order).transpose()
-    mask = np.float32(file['mask'], order=order).transpose()
+    # order = 'F'  # [order] switch to MATLAB array order, the param is deprecate in some version of numpy
+    # meas = np.float32(file['meas'], order=order).transpose()
+    # mask = np.float32(file['mask'], order=order).transpose()
+    meas = np.float32(file['meas']).transpose()
+    mask = np.float32(file['mask']).transpose()
     # orig = np.float32(file['orig'], order=order).transpose()
 orig = None  # no orig - ground truthcrop_
 # print(meas.shape, mask.shape, orig.shape)
@@ -186,7 +191,7 @@ if ('all' in test_algo_flag) or ('gaptv+fastdvdnet' in test_algo_flag):
     denoiser = 'tv+fastdvdnet'  # video non-local network
     noise_estimate = False  # disable noise estimation for GAP
     sigma1 = [0]  # pre-set noise standard deviation for 1st period denoise
-    iter_max1 = 10  # maximum number of iterations for 1st period denoise
+    iter_max1 = 1  # maximum number of iterations for 1st period denoise
     # pre-set noise standard deviation for 2nd period denoise
     sigma2 = [150/MAXB, 80/MAXB, 50/MAXB, 30/MAXB]
     # maximum number of iterations for 2nd period denoise
