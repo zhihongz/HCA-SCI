@@ -31,7 +31,7 @@ The hardware setup of our HCA-SCI system is depicted in the figure below. The in
 
 This code is tested on Windows 10 CUDA 10.0.130, CuDNN 7.6.0, and PyTorch 1.2.0. It is supposed to work on other platforms (Linux or Windows) with CUDA-enabled GPU(s). 
 
-1. Put the dataset into `./dataset`.
+1. Download the dataset from [BaiduDisk](https://pan.baidu.com/s/1ZLzKTmKtF0a3dY8wYV3dgQ) (code `0000`) and put it into `./dataset`.
 2. Create the virtual environment with required Python packages via  
 `conda env create -f environment.yml`
 2. Run  `pnp_sci_video_data_simuexp_test.py` to test the simulated data.
@@ -51,5 +51,12 @@ This code is tested on Windows 10 CUDA 10.0.130, CuDNN 7.6.0, and PyTorch 1.2.0.
 ## Citation
 
 ```
-
+@article{zhang202110Mega,
+  title = {10 Mega Pixel Snapshot Compressive Imaging with A Hybrid Coded Aperture},
+  author = {Zhang, Zhihong and Deng, Chao and Liu, Yang and Yuan, Xin and Suo, Jinli and Dai, Qionghai},
+  year = {2021},
+  journal = {Photonics Research},
+  doi = {10.1364/PRJ.435256},
+}
 ```
+
