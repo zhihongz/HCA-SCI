@@ -51,10 +51,12 @@ This code is tested on Windows 10 CUDA 10.0.130, CuDNN 7.6.0, and PyTorch 1.2.0.
 ## Citation
 
 ```
-@article{zhang202110Mega,
+@article{10mega_sci,
   title = {10 Mega Pixel Snapshot Compressive Imaging with A Hybrid Coded Aperture},
-  author = {Zhang, Zhihong and Deng, Chao and Liu, Yang and Yuan, Xin and Suo, Jinli and Dai, Qionghai},
+  author = {Zhihong, Zhang and Chao, Deng and Yang, Liu and Xin, Yuan and Jinli, Suo and Qionghai, Dai},
   year = {2021},
+  volume = {9},
+  number = {11},
   journal = {Photonics Research},
   doi = {10.1364/PRJ.435256},
 }
