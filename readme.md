@@ -52,13 +52,19 @@ This code is tested on Windows 10 CUDA 10.0.130, CuDNN 7.6.0, and PyTorch 1.2.0.
 
 ```
 @article{10mega_sci,
-  title = {10 Mega Pixel Snapshot Compressive Imaging with A Hybrid Coded Aperture},
-  author = {Zhihong, Zhang and Chao, Deng and Yang, Liu and Xin, Yuan and Jinli, Suo and Qionghai, Dai},
-  year = {2021},
-  volume = {9},
-  number = {11},
-  journal = {Photonics Research},
-  doi = {10.1364/PRJ.435256},
+author = {Zhihong Zhang and Chao Deng and Yang Liu and Xin Yuan and Jinli Suo and Qionghai Dai},
+journal = {Photon. Res.},
+keywords = {Coded aperture imaging; Compressive imaging; Digital micromirror devices; Imaging systems; Machine vision; Reconstruction algorithms},
+number = {11},
+pages = {2277--2287},
+publisher = {OSA},
+title = {Ten-mega-pixel snapshot compressive imaging with a hybrid coded aperture},
+volume = {9},
+month = {Nov},
+year = {2021},
+url = {http://www.osapublishing.org/prj/abstract.cfm?URI=prj-9-11-2277},
+doi = {10.1364/PRJ.435256}
 }
+
 ```
 
